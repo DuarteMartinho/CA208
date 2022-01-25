@@ -50,3 +50,11 @@ findNW(X, NW) :- findNorth(X, N), findWest(N, NW).
 findNE(X, NE) :- findNorth(X, N), findEast(N, NE).
 findSW(X, SW) :- findSouth(X, S), findWest(S, SW).
 findSE(X, SE) :- findSouth(X, S), findEast(S, SE).
+
+/*
+This file creates a grid like shown below
+a   b   c   d   e
+f   g   h   i   j
+k   l   m   n   o
+p   q   r   s   t
+*/
