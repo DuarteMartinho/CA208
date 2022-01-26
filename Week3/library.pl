@@ -10,6 +10,17 @@ Genre, Size), Lib).
  
 /* book(N, A, C, S) */
 /* RULES */
+/*
+
+Write a set of rules for recommending a set of books for:
+• Holidays (book should be less than 400 pages and not be a study or reference
+book).
+• Revision (book that is either for study or a reference book with more than 300
+pages).
+• Literary reading (drama books).
+• Leisure (books that either comedy or fiction)
+
+*/
 isHoliday(book(_, _, C, S)):- not(C == 'study'), not(C == 'reference'), S < 400.
 holiday(B, [B | _]) :- isHoliday(B).
 holiday(B, [_ | T]) :- holiday(B, T).
