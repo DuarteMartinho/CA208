@@ -1,4 +1,13 @@
 /* FACTS */
+/*
+
+Books description
+• Title
+• Author
+• Genre
+• Number of pages
+
+*/
 book('illiad', 'homer', 'study', 500).
 book('c', 'Richie', 'study', 150).
 book('nt_bible', 'sams', 'reference', 480).
